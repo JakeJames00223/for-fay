@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, Calendar, X } from "lucide-react";
 import PageTransition from "@/components/PageTransition";
+const BASE = import.meta.env.BASE_URL;
 
 const memories = [
   {
@@ -11,7 +12,7 @@ const memories = [
     description:
       "The day everything changed ❤️ The moment our story truly began.",
     emoji: "✨",
-    image: "memories/1.jpg",
+    image: "${BASE}memories/1.jpg",
   },
   {
     id: 2,
@@ -20,7 +21,7 @@ const memories = [
     description:
       "From small talk to lasting forever. We didn't even realize how special it was back then.",
     emoji: "💬",
-    image: "memories/2.jpg",
+    image: "${BASE}memories/2.jpg",
   },
   {
     id: 3,
@@ -29,7 +30,7 @@ const memories = [
     description:
       "I was so nervous, but you were perfect. A promise straight from the heart.",
     emoji: "🤞",
-    image: "memories/3.jpg",
+    image: "${BASE}memories/3.jpg",
   },
   {
     id: 4,
@@ -37,7 +38,7 @@ const memories = [
     title: "A Shared Feeling",
     description: "A beautiful memory we shared, filled with warmth and love.",
     emoji: "❤️",
-    image: "memories/4.jpg",
+    image: "${BASE}memories/4.jpg",
   },
   {
     id: 5,
@@ -46,7 +47,7 @@ const memories = [
     description:
       "It all started with a smile, and laughter became our language.",
     emoji: "😂",
-    image: "memories/5.jpg",
+    image: "${BASE}memories/5.jpg",
   },
   {
     id: 6,
@@ -55,7 +56,7 @@ const memories = [
     description:
       "Together until the end. A simple promise with endless meaning.",
     emoji: "💍",
-    image: "memories/6.jpg",
+    image: "${BASE}memories/6.jpg",
   },
   {
     id: 7,
@@ -64,7 +65,7 @@ const memories = [
     description:
       "We were discussing old cartoons, not knowing we were creating memories.",
     emoji: "📞",
-    image: "memories/7.jpg",
+    image: "${BASE}memories/7.jpg",
   },
   {
     id: 8,
@@ -73,7 +74,7 @@ const memories = [
     description:
       "We got closer as time went by, our hearts learning each other.",
     emoji: "💖",
-    image: "memories/8.jpg",
+    image: "${BASE}memories/8.jpg",
   },
   {
     id: 9,
@@ -82,7 +83,7 @@ const memories = [
     description:
       "Sharing lock screens and making that beautiful hand gesture together.",
     emoji: "📱",
-    image: "memories/9.jpg",
+    image: "${BASE}memories/9.jpg",
   },
   {
     id: 10,
@@ -90,7 +91,7 @@ const memories = [
     title: "Unforgettable",
     description: "The best gift I ever received, because it came from you.",
     emoji: "🎁",
-    image: "memories/10.jpg",
+    image: "${BASE}memories/10.jpg",
   },
   {
     id: 11,
@@ -99,7 +100,7 @@ const memories = [
     description:
       "I can still see the smile on your face that day. A moment frozen in my heart.",
     emoji: "😊",
-    image: "memories/11.jpg",
+    image: "${BASE}memories/11.jpg",
   },
   {
     id: 12,
@@ -107,7 +108,7 @@ const memories = [
     title: "Hope & Prayers",
     description: "I never prayed for something that much in my whole life.",
     emoji: "🌙",
-    image: "memories/12.jpg",
+    image: "${BASE}memories/12.jpg",
   },
   {
     id: 13,
@@ -116,7 +117,7 @@ const memories = [
     description:
       "Hearing you that day was a blessing I'll always be thankful for.",
     emoji: "🕌",
-    image: "memories/13.jpg",
+    image: "${BASE}memories/13.jpg",
   },
   {
     id: 14,
@@ -124,7 +125,7 @@ const memories = [
     title: "Always Mine",
     description: "It's always sweet to see that you're all mine.",
     emoji: "📝",
-    image: "memories/14.jpg",
+    image: "${BASE}memories/14.jpg",
   },
 ];
 
