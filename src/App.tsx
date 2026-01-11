@@ -23,7 +23,7 @@ const App = () => (
         <div className="relative min-h-screen">
           <AnimatePresence mode="wait">
             <Routes>
-              <Route path="/" element={<HomePage />} />
+              <Route path="/homepage" element={<HomePage />} />
               <Route path="/timeline" element={<TimelinePage />} />
               <Route path="/mood" element={<MoodPage />} />
               <Route path="/hug" element={<HugPage />} />

@@ -3,7 +3,7 @@ import { Heart, BookHeart, Smile, Hand, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 const navItems = [
-  { path: "/", icon: Heart, label: "Home" },
+  { path: "/homepage", icon: Heart, label: "Home" },
   { path: "/timeline", icon: BookHeart, label: "Memories" },
   { path: "/mood", icon: Smile, label: "Mood" },
   { path: "/hug", icon: Hand, label: "Hug" },
@@ -27,9 +27,7 @@ const Navigation = () => {
               >
                 <motion.div
                   className={`flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 ${
-                    isActive
-                      ? "gradient-love shadow-soft"
-                      : "hover:bg-muted"
+                    isActive ? "gradient-love shadow-soft" : "hover:bg-muted"
                   }`}
                   whileTap={{ scale: 0.9 }}
                 >
