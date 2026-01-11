@@ -1,5 +1,6 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom"; // Link must come from here
 import { useEffect } from "react";
+// Remove the Link import from lucide-react
 
 const NotFound = () => {
   const location = useLocation();
@@ -18,9 +19,10 @@ const NotFound = () => {
         <p className="mb-4 text-xl text-muted-foreground">
           Oops! Page not found
         </p>
-        <a href="/" className="text-primary underline hover:text-primary/90">
+        {/* Changed 'href' to 'to' */}
+        <Link to="/" className="text-primary underline hover:text-primary/90">
           Return to Home
-        </a>
+        </Link>
       </div>
     </div>
   );
