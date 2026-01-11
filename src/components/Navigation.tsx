@@ -3,7 +3,7 @@ import { Heart, BookHeart, Smile, Hand, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 const navItems = [
-  { path: "/homepage", icon: Heart, label: "Home" },
+  { path: "/", icon: Heart, label: "Home" },
   { path: "/timeline", icon: BookHeart, label: "Memories" },
   { path: "/mood", icon: Smile, label: "Mood" },
   { path: "/hug", icon: Hand, label: "Hug" },
