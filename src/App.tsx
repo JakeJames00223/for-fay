@@ -19,11 +19,11 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/for-fay">
         <div className="relative min-h-screen">
           <AnimatePresence mode="wait">
             <Routes>
-              <Route path="/for-fay" element={<HomePage />} />
+              <Route path="/" element={<HomePage />} />
               <Route path="/timeline" element={<TimelinePage />} />
               <Route path="/mood" element={<MoodPage />} />
               <Route path="/hug" element={<HugPage />} />
