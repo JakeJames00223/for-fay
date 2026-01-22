@@ -126,6 +126,15 @@ const memories = [
     emoji: "📝",
     image: "/for-fay/memories/14.jpg",
   },
+  {
+    id: 15,
+    date: "First Meet",
+    title: "17/01/2026",
+    description:
+      "The moment I finally met YOU after all the distance. The best day of my entire life.",
+    emoji: "❤️",
+    image: "/for-fay/memories/15.jpg",
+  },
 ];
 
 const TimelinePage = () => {
